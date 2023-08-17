@@ -1,0 +1,22 @@
+name: test1
+version: '${project.version}'
+main: plugin1.plugin1.Test1
+api-version: '1.16'
+commands:
+  fly:
+    description: Ativa o fly ao usuário
+    usage: /fly
+    aliases: [f]
+    permission: fly
+    permission-message: Não tens permissão para usar isso.
+  menu:
+    description: Abre o menu
+    usage: /menu
+    aliases: [m]
+  setSpawn:
+    description: Seta o spawn
+    usage: /setspawn
+    permission: spawn.set
+  spawn:
+    description: Teleporta para o spawn
+    usage: /spawn
